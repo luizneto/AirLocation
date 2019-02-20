@@ -20,8 +20,7 @@ import pt.ua.es.labProject.model.UserModel;
 @Controller
 @RequestMapping("/airplane")
 public class LoginController {
-	
-	
+		
 	@Autowired
 	private UserDao repositorio;
 	
@@ -29,7 +28,7 @@ public class LoginController {
 	public String logout(ModelMap map, HttpSession session){
 		session.invalidate();
 		map.addAttribute("user", new UserModel());
-		return "login";
+		return "airplaneList";
 	}
 	
 	public UserModel efetuarLogin(String login, String senha){
@@ -47,7 +46,7 @@ public class LoginController {
 	public String login(@ModelAttribute("user") @Valid UserModel user, ModelMap map, HttpSession session, BindingResult result){
 		if(result.hasErrors()){
 			map.addAttribute("user", user);
-			return "login";
+			return "airplaneList";
 		}
 		
 				efetuarLogin(user.getLogin(), user.getSenha());
