@@ -1,0 +1,41 @@
+<! DOCTYPE html>
+<html>
+<Head>
+	<Meta http-equiv= "Conteúdo-Tipo" content = "text/html; charset = UTF-8" />
+	<title>Login</title >
+	<Link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet" />
+	</Head>
+	<Body>
+    <Div class = "panel panel-default" >
+        <Div  class = " painel-título" >
+            <Strong>Login</strong>
+        </Div >
+        
+        <Div class = "painel-corpo" >
+			<Form action = "efetuarlogin" th:action = "@{/login}" th:object = "${userModel}" method = "post" role = "form" >
+		               <Fieldset>
+	                   	    	<Div class = "form-group row" >
+									<Div class = "col-md-4" >
+			   							<Label for = "login"> Login: </label>
+			     						<Input type = "texto"  class = "form-control" name = "login" id = "Login" th:field = "*{Login}" />
+			  					   </Div >
+								 </Div >
+							    
+							    <Div class = "form-group row" >
+								    <Div class = "col-md-4" >
+								   	  <Label for = "senha"> Senha: </label >
+								      <Input type = "password" class = "form-control" name = "senha"   id ="senha" th:field = "*{Senha}" />
+								   </Div>
+		     					</Div >
+		 	
+		     					<Button type = "submit" class = "btn btn-sucesso" >
+		     						<Span class = " glyphicon btn-glyphicon glyphicon-mais img-circle text-success"> </span >
+		     						Login
+		     					</Button >
+					    </Fieldset>
+			</Form>
+		</Div>
+	</Div>
+
+</Body>
+</html>
