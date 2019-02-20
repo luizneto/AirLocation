@@ -8,7 +8,7 @@
   <name>AirLocation Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-    <parent>
+     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
@@ -34,6 +34,12 @@
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+
+	<dependency>
+		<groupId>org.webjars</groupId>
+		<artifactId>bootstrap</artifactId>
+		<version>4.2.1</version>
 	</dependency>
 
     <dependency>
