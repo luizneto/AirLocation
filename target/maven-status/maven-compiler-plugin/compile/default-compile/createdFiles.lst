@@ -1,0 +1,15 @@
+pt/ua/es/labProject/webService/MainGetWebService.class
+pt/ua/es/labProject/model/AirplaneModel.class
+pt/ua/es/labProject/log/Log.class
+pt/ua/es/labProject/service/UserService.class
+pt/ua/es/labProject/boot/WebConfig.class
+pt/ua/es/labProject/model/UserModel.class
+pt/ua/es/labProject/boot/LoadPackageConfig.class
+pt/ua/es/labProject/controller/AirplaneController.class
+pt/ua/es/labProject/service/AirplaneService.class
+pt/ua/es/labProject/controller/Value.class
+pt/ua/es/labProject/controller/Quote.class
+pt/ua/es/labProject/controller/UserController.class
+pt/ua/es/labProject/dao/UserDao.class
+pt/ua/es/labProject/dao/AirplaneDao.class
+pt/ua/es/labProject/controller/LoginController.class
